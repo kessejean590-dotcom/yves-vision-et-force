@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yves, Vision et force : motivation, discipline et développement personnel.">
+  <title>Yves, Vision et force</title>
+  <style>
+    :root {
+      --bg: #101312;
+      --panel: #171c19;
+      --text: #f5f4ed;
+      --muted: #b5bdb5;
+      --gold: #d9b76a;
+      --line: #2b332e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1100px, 90%); margin: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .nav { display: flex; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 800; }
+    .brand span, .eyebrow { color: var(--gold); }
+    .navlink { color: var(--muted); }
+    .hero {
+      padding: 75px 0;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 35px;
+      align-items: center;
+    }
+    .eyebrow {
+      font-size: .8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.08; }
+    h1 em { color: var(--gold); font-style: normal; }
+    .intro { color: var(--muted); font-size: 1.08rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .primary { background: var(--gold); color: #171711; }
+    .quote-card {
+      padding: 28px;
+      border: 1px solid #354037;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #202923, #151a17);
+    }
+    .quote-mark { font-size: 4rem; color: var(--gold); }
+    blockquote { font: 1.7rem/1.4 Georgia, serif; margin: 12px 0 25px; }
+    section { padding: 45px 0; }
+    .section-head { max-width: 650px; margin-bottom: 28px; }
+    .section-head h2 { font-size: 2.2rem; line-height: 1.2; }
+    .section-head p, .tile p, .banner p { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .tile { padding: 22px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+    .number { color: var(--gold); font-weight: bold; }
+    .banner {
+      padding: 30px;
+      border: 1px solid #4a503b;
+      border-radius: 16px;
+      background: linear-gradient(120deg, #242b22, #171c19);
+    }
+    footer { margin-top: 40px; padding: 24px 0; border-top: 1px solid var(--line); color: var(--muted); }
+    @media (max-width: 700px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      .hero { padding: 40px 0; }
+      .navlink { display: none; }
+      h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#accueil">YVES, <span>VISION ET FORCE</span></a>
+      <a class="navlink" href="#principes">Nos principes</a>
+      <a class="navlink" href="#motivation">Motivation du jour</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="accueil">
+      <div>
+        <div class="eyebrow">La force commence dans l'esprit</div>
+        <h1>Change ta vision.<br><em>Renforce ton mental.</em></h1>
+        <p class="intro">
+          Bienvenue chez <strong>Yves, Vision et force</strong> :
+          un espace pour nourrir ton ambition, construire ta discipline
+          et avancer même quand le chemin devient difficile.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#motivation">Ma dose de motivation</a>
+          <a class="btn" href="https://www.facebook.com/">Notre page Facebook</a>
+        </div>
+      </div>
+      <aside class="quote-card">
+        <div class="quote-mark">“</div>
+        <blockquote>
+          Tu n'as pas besoin d'avoir tout compris pour commencer.
+          Tu as besoin du courage de faire le premier pas.
+        </blockquote>
+        <div class="eyebrow">Vision • Discipline • Action</div>
+      </aside>
+    </section>
+
+    <section class="wrap" id="principes">
+      <div class="section-head">
+        <div class="eyebrow">Construis-toi chaque jour</div>
+        <h2>Trois principes pour avancer.</h2>
+        <p>La motivation ouvre la porte. Tes habitudes t'aident à continuer.</p>
+      </div>
+      <div class="grid">
+        <article class="tile">
+          <div class="number">01 / VISION</div>
+          <h3>Sache pourquoi tu avances</h3>
+          <p>Garde ton objectif en tête, même lorsque les résultats prennent du temps.</p>
+        </article>
+        <article class="tile">
+          <div class="number">02 / DISCIPLINE</div>
+          <h3>Fais le travail, même petit</h3>
+          <p>Un progrès régulier vaut mieux qu'une promesse sans action.</p>
+        </article>
+        <article class="tile">
+          <div class="number">03 / PERSÉVÉRANCE</div>
+          <h3>Recommence si nécessaire</h3>
+          <p>Apprends, ajuste ta méthode et continue d'avancer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="motivation">
+      <div class="banner">
+        <div class="eyebrow">Ta pensée du jour</div>
+        <h2>N'attends pas le moment parfait.<br>Commence avec ce que tu as.</h2>
+        <p>
+          Choisis une petite action utile aujourd'hui et fais-la sérieusement.
+          Ton avenir se construit aussi dans ces moments-là.
+        </p>
+        <a class="btn primary" href="https://www.facebook.com/">
+          Suivre sur Facebook
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Yves, Vision et force — Une vision claire.
+      Un mental fort. Une action à la fois.
+    </div>
+  </footer>
+</body>
+</html>
